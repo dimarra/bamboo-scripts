@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Template NUnit Test Results File -->
+<test-results>
+  <test-suite name="Puppet-Test-Suite">
+    <results>
+      <test-case name="Validate-Manifest-Syntax" executed="False" result="Skipped"></test-case>
+      <test-case name="Validate-Hieradata-Syntax" executed="False" result="Skipped"></test-case>
+      <test-case name="Validate-Template-Syntax" executed="False" result="Skipped"></test-case>
+      <test-case name="Validate-XML-Syntax" executed="False" result="Skipped"></test-case>
+      <test-case name="Validate-Manifest-Style" executed="False" result="Skipped"></test-case>
+    </results>
+  </test-suite>
+</test-results>
