@@ -1,4 +1,4 @@
-iimport re,sys
+import re,sys
 
 for line in sys.stdin:
     try:
