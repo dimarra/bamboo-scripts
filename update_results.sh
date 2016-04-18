@@ -31,6 +31,20 @@ case "$filename" in
     else
       sed -i -e 's|name="Validate-XML-Syntax" executed="False" result="Skipped"|name="Validate-XML-Syntax" executed="True" result="Failed"><failure></failure|g' .tmp/test_results.xml
     fi ;;
+  .tmp/agent-mapping_parser.err)
+    if [ "$value" == "0" ]
+    then
+      sed -i -e 's|name="Validate-XML-Syntax" executed="False" result="Skipped"|name="Validate-Agent-Mapping-Regex" executed="True" result="Passed"|g' .tmp/test_results.xml
+    else
+      sed -i -e 's|name="Validate-XML-Syntax" executed="False" result="Skipped"|name="Validate-Agent-Mapping-Regex" executed="True" result="Failed"><failure></failure|g' .tmp/test_results.xml
+    fi ;;
+  .tmp/agent-specifier_parser.err)
+    if [ "$value" == "0" ]
+    then
+      sed -i -e 's|name="Validate-XML-Syntax" executed="False" result="Skipped"|name="Validate-Agent-Specifier-Regex" executed="True" result="Passed"|g' .tmp/test_results.xml
+    else
+      sed -i -e 's|name="Validate-XML-Syntax" executed="False" result="Skipped"|name="Validate-Agent-Specifier-Regex" executed="True" result="Failed"><failure></failure|g' .tmp/test_results.xml
+    fi ;;
   .tmp/puppet_lint.err)
     if [ "$value" == "0" ]
     then

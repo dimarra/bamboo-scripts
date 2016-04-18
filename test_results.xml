@@ -7,6 +7,8 @@
       <test-case name="Validate-Hieradata-Syntax" executed="False" result="Skipped"></test-case>
       <test-case name="Validate-Template-Syntax" executed="False" result="Skipped"></test-case>
       <test-case name="Validate-XML-Syntax" executed="False" result="Skipped"></test-case>
+      <test-case name="Validate-Agent-Mapping-Regex" executed="False" result="Skipped"></test-case>
+      <test-case name="Validate-Agent-Specifier-Regex" executed="False" result="Skipped"></test-case>
       <test-case name="Validate-Manifest-Style" executed="False" result="Skipped"></test-case>
     </results>
   </test-suite>
